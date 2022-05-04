@@ -5,7 +5,26 @@
         "ProjectId": "09c9cd6b-8cd0-4eab-9690-fff0b527f016",
         "ProjectName": "TestingNew",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "9b4cc38d-9ff2-4774-9730-9a4b7622ce06",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "db0df080-6463-463f-90bb-54408b2b17d4",
+                "DatabaseAliasName": "TestTest",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/jhapooja7755/DBMaestro3.git",
+                  "RemoteBranchName": "main",
+                  "LocalBranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +40,30 @@
       "UserData": [
         {
           "UserName": "jhapooja5577",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "db0df080-6463-463f-90bb-54408b2b17d4",
+              "DatabaseAliasName": "TestTest",
+              "DatabaseConnectionDetails": null,
+              "BranchesDatabaseConnectionDetails": [
+                {
+                  "BranchName": "main",
+                  "DatabaseConnectionDetails": {
+                    "DBTypeName": "SQL Server",
+                    "host": "Localhost",
+                    "authType": "SqlAuthentication",
+                    "userName": "sa",
+                    "dbName": "DB2",
+                    "Password": "u/Jo2Zo7eLL3QiJ56PvJUQ=="
+                  }
+                }
+              ],
+              "RepositoryCredentials": {
+                "UserName": "jhapooja5577",
+                "Password": "6qv9oIDtFAXAtMK+KLKedh7RKUg+d0Bcn5e54Gga0+L2MtgibKmkIEh+i5fQ5bTa"
+              }
+            }
+          ]
         }
       ]
     }
